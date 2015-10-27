@@ -5,26 +5,21 @@
  * Author: asafdav - https://github.com/asafdav
  */
 angular.module('ngFlag', []).
-  directive('flag', function() {
+  directive('flag', ['$parse', function($parse) {
     return {
-      restrict: 'E',
+      template: '<span class="{{ flagSize }}"><span class="flag {{ country }}"></span></span>',
       replace: true,
-      template: '<span class="f{{ size }}"><span class="flag {{ country }}"></span></span>',
-      scope: {
-        country: '@',
-        size: '@'
-      },
       link: function(scope, elm, attrs) {
         // Default flag size
-        scope.size = 16;
+        scope.flagSize = 'f16';
 
-        scope.$watch('country', function(value) {
-          scope.country = angular.lowercase(value);
+        attrs.$observe('flag', function(value) {
+          scope.country = scope.$eval(value).toLowerCase();
         });
 
-        scope.$watch('size', function(value) {
-          scope.size = value;
+        attrs.$observe('flagSize', function(value) {
+          scope.flagSize = value;
         });
       }
     };
-  });
+  }]);
