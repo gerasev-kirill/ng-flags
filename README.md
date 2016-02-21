@@ -6,9 +6,9 @@ The directive takes country iso code and creates a thumbnail of the country's fl
 
 
 ## Usage
-1. Add ng-flag.js to your main file (index.html)
+1. Add dist/ui.flag.min.js to your main file (index.html)
 
-2. Set `ngFlag` as a dependency in your module
+2. Set `uiFlag` as a dependency in your module
   ```javascript
   var myapp = angular.module('myapp', ['uiFlag'])
   ```
@@ -34,6 +34,3 @@ And and specify the wanted sizein your html:
   ```html
   <flag country="us" size="32"></flag>
   ```
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/asafdav/ng-flags/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
