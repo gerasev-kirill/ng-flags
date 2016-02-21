@@ -1,9 +1,10 @@
 {
-  "name": "ng-flags",
-  "version": "0.0.1",
-  "main": "src/directives/ng-flags.js",
+  "name": "ui-flags",
+  "version": "0.0.2",
+  "main": "dist/ui.flag.min.js",
   "dependencies": {
-    "angular": "~1.0.4"
+    "angular": "~1.0.4",
+    "world-flags-sprite": "*"
   },
   "devDependencies": {}
 }
