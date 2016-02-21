@@ -15,7 +15,7 @@ angular.module('uiFlag', [])
         }
         replace: true
         template: "
-        <span class='{{size || 16}}'>
+        <span class='f{{size || 16}}'>
             <span class='flag {{country | lowercase}}'>
             </span>
         </span>
