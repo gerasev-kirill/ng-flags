@@ -1,7 +1,7 @@
 {
   "name": "ui-flags",
   "version": "0.0.2",
-  "main": "dist/ui.flag.min.js",
+  "main": "dist/uiFlagCss16.min.js",
   "dependencies": {
     "angular": ">=1.0.4",
     "world-flags-sprite": "*"
